@@ -1,23 +1,17 @@
 from django.db import models
 
-class Education(models.model):
+class Education(models.Model):
   timespan = models.CharField(max_length=50)
   institution = models.CharField(max_length=50)
   city = models.CharField(max_length=50)
   country = models.CharField(max_length=50)
 
-class Languages(models.model):
+class Languages(models.Model):
   language = models.CharField(max_length=50)
   proficiency = models.CharField(max_length=50)
   comment = models.CharField(max_length=50)
 
-class Education(models.model):
-  timespan = models.CharField(max_length=50)
-  institution = models.CharField(max_length=50)
-  city = models.CharField(max_length=50)
-  country = models.CharField(max_length=50)
-
-class Organizations(models.model):
+class Organizations(models.Model):
   timespan = models.CharField(max_length=50)
   institution = models.CharField(max_length=50)
   title = models.CharField(max_length=50)
@@ -25,7 +19,7 @@ class Organizations(models.model):
   country = models.CharField(max_length=50)
   description = models.CharField(max_length=50)
 
-class ProfressionalExperience(models.model):
+class ProfressionalExperience(models.Model):
   timespan = models.CharField(max_length=50)
   institution = models.CharField(max_length=50)
   title = models.CharField(max_length=50)
@@ -33,11 +27,11 @@ class ProfressionalExperience(models.model):
   country = models.CharField(max_length=50)
   description = models.CharField(max_length=50)
 
-class Skills(models.model):
+class Skills(models.Model):
   skill = models.CharField(max_length=50)
   description = models.CharField(max_length=50)
 
-class CodingProjects(models.model):
+class CodingProjects(models.Model):
   title = models.CharField(max_length=50)
   tagline = models.CharField(max_length=50)
   description = models.CharField(max_length=50)

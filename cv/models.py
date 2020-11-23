@@ -19,7 +19,7 @@ class Organizations(models.Model):
   country = models.CharField(max_length=50)
   description = models.CharField(max_length=50)
 
-class ProfressionalExperience(models.Model):
+class ProfessionalExperience(models.Model):
   timespan = models.CharField(max_length=50)
   institution = models.CharField(max_length=50)
   title = models.CharField(max_length=50)

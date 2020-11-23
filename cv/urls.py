@@ -7,9 +7,9 @@ router.register('cv', views.CvView)
 router.register('education', views.EducationView)
 router.register('languages', views.LanguagesView)
 router.register('organizations', views.OrganizationsView)
-router.register('professionalExperience', views.ProfessionalExperienceView)
+router.register('professional_experience', views.ProfessionalExperienceView)
 router.register('skills', views.SkillsView)
-router.register('codingProjects', views.CodingProjectsView)
+router.register('coding_projects', views.CodingProjectsView)
 
 
 urlpatterns = [

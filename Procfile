@@ -1,4 +1,4 @@
-release: python manage.py makemigrations --no-input
-release: python manage.py migrate --no-input
+release: python manage.py makemigrations
+release: python manage.py migrate
 
 web: gunicorn api_cv.wsgi
